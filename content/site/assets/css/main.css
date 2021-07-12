@@ -1,0 +1,256 @@
+/* // REG 1801459 */
+/* Theme variables */
+body {
+    --bg: #f7f7f8;
+    --fg: #fff;
+    --font: #0e0e10;
+    --control: rgba(0, 0, 0, 0.1);
+    --shadow: rgba(0,0,0,.15);
+}
+body.theme__dark {
+    --bg: #0e0e10;
+    --fg: #18181b;
+    --font: #efeff1;
+    --control: rgba(255, 255, 255, 0.15);
+    --shadow: rgba(255,255,255,.55);
+}
+
+/* General styling */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+body {
+    font-family: sans-serif;
+    background: var(--bg);
+    color: var(--font);
+}
+a {
+    color: var(--font);
+    text-decoration: none;
+}
+main {
+    padding: 20px;
+}
+.hide {
+    display: none;
+}
+.well.well__nomargin {
+    margin-bottom: 0;
+}
+.well__review input,
+.well__search input,
+.well__search select {
+    margin-right: 30px;
+}
+.well__review .button {
+    display: block;
+    margin-top: 10px;
+}
+.well {
+    padding: 20px;
+    background-color: var(--fg);
+    border: 0;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.card__container {
+    text-align: center;
+}
+.card {
+    width: 280px;
+    margin: 10px 20px;
+    display: inline-block;
+    height: 350px;
+    vertical-align: top;
+}
+.card:hover {
+    box-shadow: 0 0 20px 2px var(--shadow);
+}
+.card__image {
+    height: 230px;
+    width: 230px;
+    border-radius: 2px;
+    margin-bottom:15px;
+}
+.card__bookmark {
+    position: relative;
+    top: -340;
+    left: 50;
+}
+.card__title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 100px;
+    white-space: nowrap;
+}
+.card > .well {
+    height: 300px;
+    overflow: hidden;
+}
+.card > h2 {
+    line-height: 1;
+}
+.tag {
+    padding: 7.5px 15px;
+    color: var(--font);
+    font-size: 12px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 8px;
+    margin: 10px;
+    display: inline-block;
+    background-color: var(--control);
+    max-width: 140px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: top;
+}
+/* Form stuff */
+input[type="text"],
+input[type="password"] {
+    color: var(--font);
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid var(--font);
+    padding: 3px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.button {
+    padding: 7.5px 15px;
+    color: var(--font);
+    font-size: 16px;
+    border: 0;
+    border-radius: 4px;
+    background-color: var(--control);
+}
+.button:hover {
+    cursor: pointer;
+}
+.button a:hover {
+    text-decoration: none;
+}
+.button__primary {
+    color: #fff;
+    background-color: #0099ff;
+}
+/* Alerts */
+.alert {
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: .9375rem;
+}
+.alert__danger {
+    color: #fff;
+    background-color: #e7515a;
+    border-color: #e7515a;
+}
+.alert__success {
+    color: #fff;
+    background-color: #008000;
+    border-color: #008000;
+}
+/* Nav */
+#navbar__username {
+    border-left: 1px solid var(--control);
+    border-right: 1px solid var(--control);
+}
+nav {
+    background: var(--fg);
+    padding: 5px 20px;
+}
+ul {
+    list-style-type: none;
+}
+nav a {
+    color: var(--font);
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+.logo a:hover {
+    text-decoration: none;
+}
+.navbar__menu .navbar__item {
+    font-size: 16px;
+    padding: 15px 5px;
+    white-space: nowrap;
+}
+.logo a {
+    font-size: 20px;
+}
+.navbar__toggle a {
+    font-size: 32px;
+}
+/* Nav (mobile navbar__menu */
+.navbar__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__toggle {
+    order: 1;
+}
+nav .button {
+    order: 1;
+}
+.navbar__item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+.navbar__item.active {
+    display: block;
+}
+/* Tablet size navbar */
+@media (min-width: 600px) {
+    .navbar__menu {
+        justify-content: center;
+    }
+    .logo {
+        flex: 1;
+    }
+    .navbar__toggle {
+        flex: 1;
+        text-align: right;
+    }
+    nav .button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+    .navbar__toggle {
+        order: 2;
+    }
+}
+/* Desktop size navbar */
+@media (min-width: 900px) {
+    .navbar__item {
+        display: block;
+        width: auto;
+    }
+    .navbar__toggle {
+        display: none;
+    }
+    .logo {
+        order: 0;
+    }
+    .navbar__item {
+        order: 1;
+    }
+    nav .button {
+        order: 2;
+        margin-left: 10px;
+    }
+    .navbar__menu .navbar__item {
+        padding: 15px 10px;
+    }
+}
