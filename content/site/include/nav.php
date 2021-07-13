@@ -1,5 +1,4 @@
 <nav>
-  <!-- REG: 1801459 -->
   <ul class="navbar__menu">
     <li class="logo"><a href="#">Game Catalogue</a></li>
     <li class="navbar__item"><a href="/">Home</a></li>
