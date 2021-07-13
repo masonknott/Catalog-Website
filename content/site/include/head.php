@@ -1,6 +1,5 @@
 <html>
 <head>
-    <!-- REG: 1801459 -->
     <title>Game-Catalogue</title>
     <link href="/assets/css/main.css" rel="stylesheet">
     <script src="/vendor/js/jquery.min.js"></script>
