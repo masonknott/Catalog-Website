@@ -2,7 +2,7 @@
     $_con->close();
 ?>
 </main>
-<footer><!-- REG: 1801459-->
+<footer>
     Copyright MK 2020
 </footer>
 </body>
