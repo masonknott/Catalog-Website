@@ -1,6 +1,5 @@
 <div class="card__container">
 <?php
-// REG 1801459
 
     $assocGenresMapping = [
         'str' => 'Strategy',
