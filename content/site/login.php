@@ -1,5 +1,4 @@
 <?php
-// REG 1801459  
     require './include/connect.php';
     if ( !isset($_POST['username'], $_POST['password']) ) {
         //Just silenty redirect if something went wrong
