@@ -1,5 +1,4 @@
 <?php 
-//reg: 1801459
 session_start();
 $config = parse_ini_file('config.ini');
 $host = $config['host'];
